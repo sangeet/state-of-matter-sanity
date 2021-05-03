@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'part:@sanity/base/router';
+
 export default {
   title: "Post",
   name: "post",
@@ -32,6 +35,12 @@ export default {
       title: "Tags",
       name: "tags",
       type: "array",
+      description: (
+        <span>
+          Tag to be added here must be created first in the{" "}
+          <Link href={"/intent/create/type=tag;template=tag/"}>Tag List</Link>
+        </span>
+      ),
       of: [
         {
           type: "reference",
@@ -43,6 +52,12 @@ export default {
       title: "Category",
       name: "category",
       type: "array",
+      description: (
+        <span>
+          Category to be added here must be created first in the{" "}
+          <Link href={"/intent/create/type=category;template=category/"}>Category List</Link>
+        </span>
+      ),
       of: [
         {
           type: "reference",
@@ -54,6 +69,12 @@ export default {
       title: "Author",
       name: "author",
       type: "array",
+      description: (
+        <span>
+          Profile to be added here must be created first in the{" "}
+          <Link href={"/intent/create/type=profile;template=profile/"}>Profile List</Link>
+        </span>
+      ),
       of: [
         {
           type: "reference",
@@ -65,6 +86,12 @@ export default {
       title: "Translated By",
       name: "translator",
       type: "array",
+      description: (
+        <span>
+          Profile to be added here must be created first in the{" "}
+          <Link href={"/intent/create/type=profile;template=profile/"}>Profile List</Link>
+        </span>
+      ),
       of: [
         {
           type: "reference",

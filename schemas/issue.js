@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'part:@sanity/base/router';
+
 export default {
   title: "Issues",
   name: "issues",
@@ -12,6 +15,12 @@ export default {
       title: "Posts",
       name: "posts",
       type: "array",
+      description: (
+        <span>
+          Post to be added here must be created first in the{" "}
+          <Link href={"/intent/create/type=post;template=post/"}>Post List</Link>
+        </span>
+      ),
       of: [
         {
           type: "reference",
@@ -23,6 +32,12 @@ export default {
       title: "Editor",
       name: "editor",
       type: "array",
+      description: (
+        <span>
+          Profile to be added here must be created first in the{" "}
+          <Link href={"/intent/create/type=profile;template=profile/"}>Profile List</Link>
+        </span>
+      ),
       of: [
         {
           type: "reference",
