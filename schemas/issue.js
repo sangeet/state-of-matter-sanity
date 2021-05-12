@@ -37,7 +37,7 @@ export default {
       name: "year",
       type: "number",
       options: {
-        list: Array(new Date().getFullYear() - 2021 + 1)
+        list: Array(new Date().getFullYear() - 2021 + 2)
           .fill()
           .map((_, i) => 2021 + i)
       },
