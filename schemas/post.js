@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'part:@sanity/base/router';
+import React from "react";
+import { Link } from "part:@sanity/base/router";
 
 export default {
   title: "Post",
@@ -55,7 +55,9 @@ export default {
       description: (
         <span>
           Category to be added here must be created first in the{" "}
-          <Link href={"/intent/create/type=category;template=category/"}>Category List</Link>
+          <Link href={"/intent/create/type=category;template=category/"}>
+            Category List
+          </Link>
         </span>
       ),
       of: [
@@ -66,13 +68,32 @@ export default {
       ],
     },
     {
+      title: "Content Warning",
+      name: "contentWarning",
+      type: "array",
+      description: (
+        <span>
+          Tag to be added here must be created first in the{" "}
+          <Link href={"/intent/create/type=contentWarning;template=contentWarning/"}>Content Warning</Link>
+        </span>
+      ),
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "contentWarning" }],
+        },
+      ],
+    },
+    {
       title: "Author",
       name: "author",
       type: "array",
       description: (
         <span>
           Profile to be added here must be created first in the{" "}
-          <Link href={"/intent/create/type=profile;template=profile/"}>Profile List</Link>
+          <Link href={"/intent/create/type=profile;template=profile/"}>
+            Profile List
+          </Link>
         </span>
       ),
       of: [
@@ -89,7 +110,9 @@ export default {
       description: (
         <span>
           Profile to be added here must be created first in the{" "}
-          <Link href={"/intent/create/type=profile;template=profile/"}>Profile List</Link>
+          <Link href={"/intent/create/type=profile;template=profile/"}>
+            Profile List
+          </Link>
         </span>
       ),
       of: [

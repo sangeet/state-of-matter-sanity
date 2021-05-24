@@ -9,6 +9,7 @@ import post from "./post";
 import profile from "./profile";
 import tag from "./tag";
 import category from "./category";
+import contentWarning from "./contentWarning";
 import page from "./page";
 import subpage from "./subpage";
 
@@ -25,6 +26,7 @@ export default createSchema({
     profile,
     tag,
     category,
+    contentWarning,
     page,
     subpage,
   ]),

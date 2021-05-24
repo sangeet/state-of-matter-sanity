@@ -43,6 +43,11 @@ export default {
       },
     },
     {
+      title: "Cover Image",
+      name: "image",
+      type: "image",
+    },
+    {
       title: "Posts",
       name: "posts",
       type: "array",
