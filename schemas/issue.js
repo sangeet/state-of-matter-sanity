@@ -48,6 +48,11 @@ export default {
       type: "image",
     },
     {
+      title: "Book Cover",
+      name: "bookCover",
+      type: "image",
+    },
+    {
       title: "Posts",
       name: "posts",
       type: "array",

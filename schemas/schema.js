@@ -13,6 +13,11 @@ import contentWarning from "./contentWarning";
 import page from "./page";
 import subpage from "./subpage";
 
+import link from "./link";
+import customBlock from "./block";
+
+import siteSettings from "./siteSettings";
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -21,6 +26,7 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    siteSettings,
     issue,
     post,
     profile,
@@ -28,6 +34,8 @@ export default createSchema({
     category,
     contentWarning,
     page,
+    link,
+    customBlock,
     subpage,
   ]),
 });

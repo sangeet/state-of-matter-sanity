@@ -29,7 +29,7 @@ export default {
       title: "Body",
       name: "body",
       type: "array",
-      of: [{ type: "block" }],
+      of: [{ type: "block" }, { type: "image" }],
     },
     {
       title: "Tags",
@@ -74,7 +74,11 @@ export default {
       description: (
         <span>
           Tag to be added here must be created first in the{" "}
-          <Link href={"/intent/create/type=contentWarning;template=contentWarning/"}>Content Warning</Link>
+          <Link
+            href={"/intent/create/type=contentWarning;template=contentWarning/"}
+          >
+            Content Warning
+          </Link>
         </span>
       ),
       of: [

@@ -23,5 +23,11 @@ export default {
       name: 'email',
       type: 'string',
     },
+    {
+      title: "Bio",
+      name: "bio",
+      type: "array",
+      of: [{ type: "block" }],
+    },
   ],
 };
