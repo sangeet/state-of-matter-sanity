@@ -12,7 +12,7 @@ import category from "./category";
 import contentWarning from "./contentWarning";
 import page from "./page";
 import subpage from "./subpage";
-
+import divider from "./divider";
 import link from "./link";
 import customBlock from "./block";
 
@@ -37,5 +37,6 @@ export default createSchema({
     link,
     customBlock,
     subpage,
+    divider,
   ]),
 });
