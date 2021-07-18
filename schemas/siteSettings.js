@@ -27,5 +27,16 @@ export default {
       type: "array",
       of: [{ type: "link" }],
     },
+    {
+      name: "genericPageExceptions",
+      title: "Generic Page Exceptions",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "page" }],
+        },
+      ],
+    },
   ],
 };

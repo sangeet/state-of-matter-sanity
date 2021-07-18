@@ -12,11 +12,16 @@ import category from "./category";
 import contentWarning from "./contentWarning";
 import page from "./page";
 import subpage from "./subpage";
-import divider from "./divider";
 import link from "./link";
-import customBlock from "./block";
-
+import customBlock from "./customBlock";
 import siteSettings from "./siteSettings";
+
+import content from "./content";
+import divider from "./blocks/divider";
+import centeredBlock from "./blocks/centeredBlock";
+import embed from "./blocks/embed";
+
+import width from "./parts/width";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -37,6 +42,14 @@ export default createSchema({
     link,
     customBlock,
     subpage,
+
+    //Blocks
+    content,
     divider,
+    centeredBlock,
+    embed,
+
+    //Parts
+    width,
   ]),
 });

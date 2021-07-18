@@ -28,8 +28,7 @@ export default {
     {
       title: "Body",
       name: "body",
-      type: "array",
-      of: [{ type: "block" }, { type: "image" }, {type:"divider"}],
+      type: "content",
     },
     {
       title: "Tags",
